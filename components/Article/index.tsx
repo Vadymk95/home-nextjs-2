@@ -3,7 +3,7 @@ import cl from 'classnames';
 import styles from './index.module.scss';
 
 type PropsType = {
-  className: string;
+  className?: string;
   children: ReactNode;
 };
 

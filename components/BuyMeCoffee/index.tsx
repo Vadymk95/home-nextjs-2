@@ -2,7 +2,7 @@ import { FC } from 'react';
 import styles from './index.module.scss';
 
 type PropsType = {
-  className: string;
+  className?: string;
 };
 
 const BuyMeCoffee: FC<PropsType> = ({ className }) => {

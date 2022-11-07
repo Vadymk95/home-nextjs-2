@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import cl from 'classnames';
 import styles from './index.module.scss';
 
 type PropsType = {
@@ -7,7 +8,14 @@ type PropsType = {
 };
 
 const Cover: FC<PropsType> = ({ className, title }) => {
-  return <div>index</div>;
+  return (
+    <div className={cl(className, styles.cover)}>
+      <h1
+        className={styles.coverTitle}
+        dangerouslySetInnerHTML={{ __html: title }}
+      />
+    </div>
+  );
 };
 
 export default Cover;

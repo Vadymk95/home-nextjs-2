@@ -1,6 +1,11 @@
 import { FC } from 'react';
+import styles from './index.module.scss';
 
-const Content: FC = () => {
+type PropsType = {
+  className: string;
+};
+
+const Content: FC<PropsType> = ({ className }) => {
   return <div>index</div>;
 };
 

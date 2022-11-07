@@ -1,7 +1,11 @@
 import { FC } from 'react';
-import './index.module.scss';
+import styles from './index.module.scss';
 
-const Button: FC = () => {
+type PropsType = {
+  className: string;
+};
+
+const Button: FC<PropsType> = ({ className }) => {
   return <div>index</div>;
 };
 
